@@ -23,7 +23,7 @@ const GetTitle = () => {
   return (
     <div>GetTitleOriginal component 
     <ul> {
-      films.filter((filmPopular, idx) => filmPopular.title.toLowerCase().includes(info.toLowerCase())).map((filmPopular) => {
+      films.filter((filmPopular, idx) => filmPopular.original_title.toLowerCase().includes(info.toLowerCase())).map((filmPopular) => {
         return (
             <li key={filmPopular.idx} >
             <p>{filmPopular.original_title}</p>

@@ -23,10 +23,10 @@ const GetTitle = () => {
   return (
     <div>GetTitleOriginal component 
     <ul> {
-      films.filter((filmPopular, idx) => filmPopular.title.toLowerCase().includes(info.toLowerCase())).map((filmPopular) => {
+      films.filter((filmPopular, idx) => filmPopular.overview.toLowerCase().includes(info.toLowerCase())).map((filmPopular) => {
         return (
             <li key={filmPopular.idx} >
-            <p>{filmPopular.title_original}</p>
+            <p>{filmPopular.original_title}</p>
             <img src={"https://image.tmdb.org/t/p/w200" + filmPopular.poster_path} alt="" />
             <p>{filmPopular.overview}</p>
             </li>
