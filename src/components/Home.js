@@ -24,6 +24,7 @@ const Home = () => {
       films.filter((filmAmount, id) => id < 10).map((filmList,id) => {
         console.log(filmList);
         return (
+          
           <li className='section--home-list__item' key={filmList.id}>
             <p className='item--title'>Title: {filmList.title}</p>
             <img className='item--image' src={"https://image.tmdb.org/t/p/w200/" + filmList.poster_path} alt=""/>
@@ -32,6 +33,7 @@ const Home = () => {
         )
       })
     }
+   
     </ol>
     </section>
   )
