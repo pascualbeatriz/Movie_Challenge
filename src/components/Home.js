@@ -25,7 +25,9 @@ const Home = () => {
         console.log(filmList);
         return (
           <li className='section--home-list__item' key={filmList.id}>
-            <p>Title: {filmList.title}</p>
+            <p className='item--title'>Title: {filmList.title}</p>
+            <img className='item--image' src={"https://image.tmdb.org/t/p/w200/" + filmList.poster_path} alt=""/>
+            {/* <p className='item--title'>Title: {filmList.overview}</p> */}
           </li>
         )
       })
