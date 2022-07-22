@@ -3,14 +3,13 @@ import { useParams } from 'react-router-dom';
 
 const GetTitle = () => {
 
-  const [films, setfilms] = useState([]);
+  const [films, setFilms] = useState([]);
+  const {info} = useParams();
 
   useEffect(()=> {
     getApiInfo()
-  },[]) 
+  },[]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  const {info} = useParams();
-  console.log(info)
 
   //Get info Api and add to state
   const getApiInfo = async () => {
@@ -18,11 +17,11 @@ const GetTitle = () => {
     const response = await fetch(url);
     const res = await response.json();
     // console.log(res.results)
-    setfilms(res.results)
+    setFilms(res.results)
   }
 
   return (
-    <div>GetOriginTitle component 
+    <div>GetTitle component 
     <ul> {
       films.filter((filmPopular, idx) => filmPopular.title.toLowerCase().includes(info.toLowerCase())).map((filmPopular) => {
         return (

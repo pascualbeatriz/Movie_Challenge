@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
-  const [infoInput, setInfoInput] = useState('');
+  const [info, setInfo] = useState('');
   const [title, setTitle] = useState('/');
   const [voTitle, setVoTitle] = useState ('/');
   const [overview, setOverview] = useState('/');
@@ -14,10 +14,10 @@ const Header = () => {
     <NavLink to={title}>
       <span className="nav--link">Title</span>
     </NavLink>
-    <NavLink to="title_original">
+    <NavLink to={voTitle}>
       <span className="nav--link">V.O. Title</span>
     </NavLink>
-    <NavLink to="overview">
+    <NavLink to={overview}>
       <span className="nav--link">Overview</span>
     </NavLink>
     </nav>
@@ -25,13 +25,17 @@ const Header = () => {
     <form>
       <label>
         Introduce el nombre de una película:
-        <input type="text" name="name" value={infoInput} onChange={(e) => 
+        <input type="text" name="name" value={info} onChange={(e) => 
         {
-          setInfoInput(e.target.value)
+          setInfo(e.target.value)
           if(e.target.value === ''){
             setTitle('/')
+            setVoTitle('/')
+            overview('/')
           } else {
             setTitle('/title/' + e.target.value)
+            setVoTitle('/title_original/' + e.target.value)
+            setOverview('/overview/' + e.target.value)
           }
         }
         
