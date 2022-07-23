@@ -9,7 +9,7 @@ const Header = () => {
   const [overview, setOverview] = useState('/');
 
   return (
-    <section>
+    <section className='header--app'>
     <nav className="nav--container">
     <NavLink to={title}>
       <span className="nav--link">Title</span>
@@ -22,10 +22,10 @@ const Header = () => {
     </NavLink>
     </nav>
 
-    <form>
-      <label>
+    <form className="form--container">
+      <label className="form--label">
         Introduce el nombre de una película:
-        <input type="text" name="name" value={info} onChange={(e) => 
+        <input className="form--input" type="text" name="name" value={info} onChange={(e) => 
         {
           setInfo(e.target.value)
           if(e.target.value === ''){

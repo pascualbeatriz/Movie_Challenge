@@ -21,18 +21,19 @@ const GetTitle = () => {
   }
 
   return (
-    <div>GetTitle component 
-    <ul> {
+    <section className='section--getTitle'>
+    <h2 className='section--getTitle-title'>Title</h2>
+    <ul className='section--getTitle-list'> {
       films.filter((filmPopular, idx) => filmPopular.title.toLowerCase().includes(info.toLowerCase())).map((filmPopular) => {
         return (
-            <li key={filmPopular.idx} >
-            <p>{filmPopular.title}</p>
-            <img src={"https://image.tmdb.org/t/p/w200" + filmPopular.poster_path} alt="" />
+            <li className='section--getTitle-list__item'  key={filmPopular.idx} >
+            <p className='item--title'>{filmPopular.title}</p>
+            <img className='item--image' src={"https://image.tmdb.org/t/p/w200" + filmPopular.poster_path} alt="" />
             </li>
         ) 
       })}
     </ul>
-    </div>
+    </section>
   )
 }
 

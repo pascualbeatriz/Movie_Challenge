@@ -1,1 +1,131 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+.App--movie-challenge {
+  margin:0;
+  padding:0;
+  width: 100vw;
+}
+
+.header--app {
+  margin:0;
+  padding:20px; 
+  height:auto;
+  background-color: #495C83;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav--container {
+  margin:0 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+
+.nav--link {
+  font-size:18px;
+  font-weight: 900;
+  text-decoration:none;
+  color:white;
+}
+
+.nav--link:hover {
+  text-decoration:none;
+}
+
+.active, .active:hover {
+  text-decoration: none;
+}
+
+.form--container {
+  margin:0 auto;
+}
+
+.form--label {
+  font-size:14px;
+  font-weight: 900;
+  color:white;
+}
+
+.form--input {
+margin-left:14px;
+}
+
+.section--home,
+.section--getTitle,
+.section--getVoTitle,
+.section--getOverview {
+  padding:20px;
+
+}
+
+.section--home-title, 
+.section--getTitle-title,
+.section--getVoTitle-title,
+.section--getOverview-title{
+  font-size:32px;
+  font-weight: 900;
+  margin-bottom:30px;
+  text-align: center;
+}
+
+.section--getTitle-title,
+.section--getVoTitle-title,
+.section--getOverview-title{
+  font-size:26px;
+  text-align: center;
+}
+
+.section--home-list,
+.section--getTitle-list,
+.section--getVoTitle-list,
+.section--getOverview-list {
+ display:grid;
+ grid-template-columns:repeat(2, 1fr);
+ grid-gap:20px;
+ justify-items: center;
+}
+
+.section--home-list__item,
+.section--getTitle-list__item,
+.section--getVoTitle-list__item,
+.section--getOverview-list__item {
+  background-color:#A8A4CE;
+  display:flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding:10px;
+  border-radius: 6px;
+}
+
+.item--title{
+  font-size:26px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  margin:10px 0;
+  width: 300px;
+  color:#495C83;
+}
+
+.item--image {
+  width: 250px;
+  height: auto;
+}
+
+.item--text{
+  font-size:14px;
+  font-weight: 100;
+  line-height: 1.2;
+  text-align: left;
+  margin:20px 0 10px;
+  width: 250px;
+  color:#495C83;
+}
+
 

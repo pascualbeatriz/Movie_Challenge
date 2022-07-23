@@ -8,7 +8,7 @@ import GetOverview from "./components/GetOverview"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App--movie-challenge">
     <BrowserRouter>
       <Header/>
       <main>
