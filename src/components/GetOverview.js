@@ -22,7 +22,7 @@ const GetTitle = () => {
 
   return (
     <section className='section--getOverview'>
-    <h2 className='section--getOverview-title'>Title</h2>
+    <h2 className='section--getOverview-title'>Overview</h2>
     <ul className='section--getOverview-list'>{
       films.filter((filmPopular, idx) => filmPopular.overview.toLowerCase().includes(info.toLowerCase())).map((filmPopular) => {
         return (

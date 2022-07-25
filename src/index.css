@@ -27,8 +27,9 @@
 }
 
 .nav--link {
+  font-family: 'Roboto', sans-serif;
   font-size:18px;
-  font-weight: 900;
+  font-weight: 300;
   text-decoration:none;
   color:white;
 }
@@ -46,8 +47,9 @@
 }
 
 .form--label {
+  font-family: 'Roboto', sans-serif;
   font-size:14px;
-  font-weight: 900;
+  font-weight: 300;
   color:white;
 }
 
@@ -67,8 +69,9 @@ margin-left:14px;
 .section--getTitle-title,
 .section--getVoTitle-title,
 .section--getOverview-title{
+  font-family: 'Roboto', sans-serif;
   font-size:32px;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom:30px;
   text-align: center;
 }
@@ -104,8 +107,9 @@ margin-left:14px;
 }
 
 .item--title{
+  font-family: 'Roboto', sans-serif;
   font-size:26px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
   text-align: center;
   margin:10px 0;
@@ -119,9 +123,10 @@ margin-left:14px;
 }
 
 .item--text{
-  font-size:14px;
-  font-weight: 100;
-  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+  font-weight: 300;
+  line-height: 1.25;
   text-align: left;
   margin:20px 0 10px;
   width: 250px;

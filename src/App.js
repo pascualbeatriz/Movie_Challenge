@@ -12,7 +12,6 @@ function App() {
     <BrowserRouter>
       <Header/>
       <main>
-      Aquí el contenido de nuestra lista, esto sería la home
       {/* <Home/> */}
       </main>
       <Routes>
