@@ -15,11 +15,15 @@ He instalado:
 2. React router dom: npm install react-router-dom (https://reactrouter.com/docs/en/v6/getting-started/installation)
 
 Fase 2: Hacer llamada a la API the movie DB  https://developers.themoviedb.org/3
-Fase 3: Obtener el listado de las películas populares y pintarlas en la Home
-fase 4: Crear una barra de navegación e input (como buscador) para filtrar con los parámetros establecidos
-Fase 5: Hacer un filtrado a traves de los links del nav y el input de la cabecera, con los parámetros que queremos que se muestren para cada película. 
-Pasarle la información necesaria a través de props a cada componente
-Fase 5: Establecer routas con los filtros por título, título en versión original y con la sinopsis de cada película.
-Fase 6: Añadir estilos y look and feel
 
+Fase 3: Obtener el listado de las películas populares y pintarlas en la Home
+
+fase 4: Crear una barra de navegación e input (como buscador) para filtrar con los parámetros establecidos
+
+Fase 5: Hacer un filtrado a traves de los links del nav y el input de la cabecera, con los parámetros que queremos que se muestren para cada película. 
+Pasarle la información necesaria a través de props a cada componente.
+
+Fase 5: Establecer routas con los filtros por título, título en versión original y con la sinopsis de cada película.
+
+Fase 6: Añadir estilos y look and feel
 
